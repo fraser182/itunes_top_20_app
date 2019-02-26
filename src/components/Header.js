@@ -4,7 +4,11 @@ import '../styles/Header.css';
 class Header extends Component {
 
   render(){
-    return <div className="header">{this.props.title}</div>
+    return(
+      <div className="header">
+      <h2>Top Of The Pops</h2>
+      </div>
+    )
   }
 }
 

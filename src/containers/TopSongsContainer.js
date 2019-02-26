@@ -29,7 +29,7 @@ class TopSongsContainer extends Component {
     }
     return (
       <div>
-      <Header title='Top Of The Pops' />
+      <Header />
       </div>
     );
   }
