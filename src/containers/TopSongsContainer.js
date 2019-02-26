@@ -19,7 +19,7 @@ class TopSongsContainer extends Component {
     const url = 'https://itunes.apple.com/gb/rss/topsongs/limit=20/json';
     const request = new Request();
     request.get(url).then((data) =>
-    this.setState({songs:data}))
+    this.setState({songs:data.feed.entry}))
   }
 
 
