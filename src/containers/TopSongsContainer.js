@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Request from '../helpers/request';
+import Header from '../components/Header.js';
 
 
 class TopSongsContainer extends Component {
@@ -28,7 +29,7 @@ class TopSongsContainer extends Component {
     }
     return (
       <div>
-      <p>Top Songs Container as data has loaded</p>
+      <Header title='Top Of The Pops' />
       </div>
     );
   }
