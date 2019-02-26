@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Request from '../helpers/request';
 import Header from '../components/Header.js';
+import SongList from '../components/SongList.js'
 
 
 class TopSongsContainer extends Component {
@@ -8,10 +9,8 @@ class TopSongsContainer extends Component {
     super(props);
     this.state = {
       //Brings back list of all the songs
-      songs:[],
-
+      songs:[]
     };
-
 
   }
   //This is to get the api of songs
@@ -28,8 +27,9 @@ class TopSongsContainer extends Component {
       return <p>Loading Data....</p>;
     }
     return (
-      <div>
+      <div className="main-container">
       <Header />
+      <SongList songs={this.state.songs} />
       </div>
     );
   }
