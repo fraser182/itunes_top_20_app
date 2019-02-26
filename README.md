@@ -28,7 +28,7 @@ When you are accessing JSON keys wihich have special characters you cannot use d
 
 So if a country had a key `region:name` you could not do `country.region:name`. You would need to do `country['region:name']`
 
-<br>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
