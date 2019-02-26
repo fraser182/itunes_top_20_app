@@ -11,7 +11,6 @@ class TopSongsContainer extends Component {
       //Brings back list of all the songs
       songs:[]
     };
-
   }
   //This is to get the api of songs
   componentDidMount(){
@@ -20,7 +19,6 @@ class TopSongsContainer extends Component {
     request.get(url).then((data) =>
     this.setState({songs:data.feed.entry}))
   }
-
 
   render(){
     if (!this.state.songs){
