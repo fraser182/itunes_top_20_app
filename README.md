@@ -24,7 +24,7 @@ Add a dropdown to choose a genre of music to display - more URLS can be found at
 
 ## Remember
 
-When you are accessing JSON keys wihich have special characters you cannot use dot notation. You have to use square brackets.
+When you are accessing JSON keys which have special characters you cannot use dot notation. You have to use square brackets.
 
 So if a country had a key `region:name` you could not do `country.region:name`. You would need to do `country['region:name']`
 
