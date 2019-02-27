@@ -10,7 +10,13 @@ render(){
     }
     const songs = this.props.songs.map((song, index) => {
       return (
-        <Song song={song} index={index}/>
+        <Song
+        key={index}
+        position={index+1}
+        title={song['im:name'].label}
+        artist={song['im:artist'].label}
+        image={song['im:image'][2].label}
+        />
       )
     }
   );

@@ -1,5 +1,23 @@
-.song {
+.song{
 
- border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  border: 2px solid yellow;
+  width: 100%;
+
+}
+
+.song img{
+
+border: 2px solid blue;
+}
+
+
+
+.song-info{
+  width: 30%;
+text-align: center;
+  border: 2px solid pink;
+
 
 }

@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/Song.css';
 
+
+
 const Song = (props) => {
-    return (
+  // console.log('props', props);
+  return (
 
     <div className="song">
-    <p>Chart Position: { props.index +1 } </p>
-    <p>Title: { props.song['im:name']['label'] } </p>
-    <p>Artist: { props.song['im:artist']['label'] } </p>
+    <div className="song-image">
+    <img src= { props.image } alt={`${props.title} by ${props.artist}`}/>
+    </div>
+    <div className="song-info">
+    <p>Chart Position: { props.position} </p>
+    <p>Title: { props.title} </p>
+    <p>Artist: { props.artist} </p>
+    </div>
     </div>
   )
 }
